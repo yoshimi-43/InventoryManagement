@@ -1,7 +1,7 @@
 package com.example.InventoryManagement.service;
 
-import com.example.InventoryManagement.model.User;
-import com.example.InventoryManagement.repository.UserRepository;
+import java.util.Collections;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -9,7 +9,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
+import com.example.InventoryManagement.model.User;
+import com.example.InventoryManagement.repository.UserRepository;
 
 @Service
 public class UserService implements UserDetailsService {
